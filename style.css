@@ -4,12 +4,82 @@
     box-sizing: border-box;
 }
 
-.main {
-    height: 100dvh;
-    background-color: red;
+
+li, a {
+    list-style: none;
+    text-decoration: none;
+
+}
+
+.ham {
+    background-color: yellow;
+    width: 80px;
+    height: 40px;
+    position: absolute;
+    z-index: 2;
+    right: 3px;
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 50px;
-    font-family: 'Times New Roman', Times, serif;
+
+}
+
+header {
+    position: relative;
+    background-color: red;
+    height: 100dvh;
+    /* display: flex; */
+    justify-content: center;
+    transform: translateX(100%);
+}
+.ul-wrapper {
+    display: flex;
+    flex-direction: column;
+    background-color: aquamarine;
+    height: 20rem;
+    float: right;
+    margin-right: 5rem;
+    
+}
+
+
+
+/* 
+
+////////////////tablet
+
+ */
+
+@media screen and (min-width: 760px)
+ and (max-width: 1029px) 
+ {
+    
+}
+/* 
+
+//////////// pc
+
+ */
+
+@media screen and (min-width: 1030px) {
+    header {
+
+        transform:none;
+    }
+    .ul-wrapper {
+        background-color: green;
+        width: 20rem;
+        height: 4rem;
+        display: grid;
+
+        grid-template-columns: repeat(2, 1fr);
+        margin-left: 3rem;
+        float: none;
+
+        
+    }
+    .ul-wrapper li {
+  
+        
+    }
 }
