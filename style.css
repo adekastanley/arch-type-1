@@ -8,6 +8,7 @@ li,
 a {
   list-style: none;
   text-decoration: none;
+  color: white;
 }
 
 .ham {
@@ -27,10 +28,12 @@ header {
   transform: translateX(100%);
   display: flex;
   justify-content: end;
+  background-color: green;
+  /* overflow: hidden; */
 }
 nav {
   position: absolute;
-  /* background-color: red; */
+  background-color: black;
   height: 100dvh;
   display: flex;
   z-index: 1;
@@ -39,7 +42,7 @@ nav {
 .ul-wrapper {
   display: flex;
   flex-direction: column;
-  background-color: aquamarine;
+  /* background-color: aquamarine; */
   height: 100%;
   width: 10rem;
 
@@ -52,8 +55,20 @@ nav {
 }
 
 .hero {
-  height: 95dvh;
-  background-color: yellow;
+  height: 100dvh;
+  display: flex;
+  /* justify-content: center; */
+  padding-left: 10%;
+  align-items: center;
+  /* background-color: yellow; */
+  background-image: url('./images/hero.jpg');
+}
+.hero  h1{
+    font-size: 60px;
+    width: 40px;
+
+    /* overflow: hidden; */
+    
 }
 
 /* 
@@ -63,6 +78,16 @@ nav {
  */
 
 @media screen and (min-width: 760px) and (max-width: 1029px) {
+    .ul-wrapper {
+
+
+        width: 20rem;
+      
+        padding-top: 60%;
+        padding-left: 20%;
+        /* float: right; */
+        /* margin-right: 5rem; */
+      }
 }
 /* 
 
@@ -77,12 +102,17 @@ nav {
   header {
     display: block;
     transform: none;
-  }
-  nav {
+    background-color: none;
     height: none;
-  }
-  .ul-wrapper {
-    background-color: green;
+}
+nav {
+    height: none;
+    background-color: transparent;
+    height: auto;
+}
+.ul-wrapper {
+    /* background-color: green; */
+    background-color: none;
     width: 20rem;
     height: 4rem;
     display: grid;
@@ -94,4 +124,9 @@ nav {
   .ul-wrapper li {
     margin: 0 0;
   }
+  .hero  h1{
+    font-size: 100px;
+    width: 40px;
+    
+}
 }
