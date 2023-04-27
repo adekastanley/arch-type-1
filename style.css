@@ -1,56 +1,60 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-
-li, a {
-    list-style: none;
-    text-decoration: none;
-
+li,
+a {
+  list-style: none;
+  text-decoration: none;
 }
 
 .ham {
-    background-color: yellow;
-    width: 80px;
-    height: 40px;
-    position: absolute;
-    z-index: 2;
-    right: 3px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
+  background-color: yellow;
+  width: 80px;
+  height: 40px;
+  position: absolute;
+  z-index: 2;
+  right: 3px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 header {
-    position: relative;
-    background-color: red;
-    height: 100dvh;
-    display: flex;
-    /* justify-content: end; */
-    justify-content: end;
-    /* transform: translateX(100%); */
+  position: relative;
+  transform: translateX(100%);
+  display: flex;
+  justify-content: end;
+}
+nav {
+  position: absolute;
+  /* background-color: red; */
+  height: 100dvh;
+  display: flex;
+  z-index: 1;
+  /* justify-content: end; */
 }
 .ul-wrapper {
-    display: flex;
-    flex-direction: column;
-    background-color: aquamarine;
-    height: 100%;
-    width: 10rem;
+  display: flex;
+  flex-direction: column;
+  background-color: aquamarine;
+  height: 100%;
+  width: 10rem;
 
-    padding-top: 60%;
-    /* float: right; */
-    /* margin-right: 5rem; */
-    
+  padding-top: 60%;
+  /* float: right; */
+  /* margin-right: 5rem; */
 }
 .ul-wrapper li {
-    margin: 1rem 0;
-    
+  margin: 1rem 0;
 }
 
-
+.hero {
+  height: 95dvh;
+  background-color: yellow;
+}
 
 /* 
 
@@ -58,10 +62,7 @@ header {
 
  */
 
-@media screen and (min-width: 760px)
- and (max-width: 1029px) 
- {
-    
+@media screen and (min-width: 760px) and (max-width: 1029px) {
 }
 /* 
 
@@ -70,28 +71,27 @@ header {
  */
 
 @media screen and (min-width: 1030px) {
-    .ham {
-        display: none;
-    
-    }
-    header {
-        display: block;
-        transform:none;
-    }
-    .ul-wrapper {
-        background-color: green;
-        width: 20rem;
-        height: 4rem;
-        display: grid;
+  .ham {
+    display: none;
+  }
+  header {
+    display: block;
+    transform: none;
+  }
+  nav {
+    height: none;
+  }
+  .ul-wrapper {
+    background-color: green;
+    width: 20rem;
+    height: 4rem;
+    display: grid;
 
-        grid-template-columns: repeat(2, 1fr);
-        margin-left: 3rem;
-        padding-top: 0;
-
-        
-    }
-    .ul-wrapper li {
-        margin: 0 0;
-        
-    }
+    grid-template-columns: repeat(2, 1fr);
+    margin-left: 3rem;
+    padding-top: 0;
+  }
+  .ul-wrapper li {
+    margin: 0 0;
+  }
 }
