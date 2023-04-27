@@ -3,12 +3,19 @@
   padding: 0;
   box-sizing: border-box;
 }
+:root {
+
+    --main-font: 'Open Sans', sans-serif;
+    /* --main-font:  font-family: curasiv;
+    --main-font: 'Courier New', Courier, monospace; */
+}
 
 li,
 a {
   list-style: none;
   text-decoration: none;
   color: white;
+  font-family: var(--main-font);
 }
 
 .ham {
@@ -66,6 +73,8 @@ nav {
 .hero  h1{
     font-size: 60px;
     width: 40px;
+    font-family: var(--main-font);
+   
 
     /* overflow: hidden; */
     
@@ -109,6 +118,7 @@ nav {
     height: none;
     background-color: transparent;
     height: auto;
+    margin-top: 1rem;
 }
 .ul-wrapper {
     /* background-color: green; */
@@ -123,6 +133,7 @@ nav {
   }
   .ul-wrapper li {
     margin: 0 0;
+    font-weight: bold;
   }
   .hero  h1{
     font-size: 100px;
